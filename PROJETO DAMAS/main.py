@@ -124,13 +124,13 @@ while True:
     # Condição de fim de jogo
     if constantes.quant_pecas_j1 == 0 or constantes.quant_pecas_j2 == 0:
         if constantes.quant_pecas_j1 == 0:
-            print("{} GANHOU A PARTIDA!".format(constantes.J1))
+            print("\033[1;32m{} GANHOU A PARTIDA!\033[1;42m".format(constantes.J1))
         if constantes.quant_pecas_j2 == 0:
-            print("{} GANHOU A PARTIDA!".format(constantes.J2))
+            print("\033[1;32m{} GANHOU A PARTIDA!\033[1;42m".format(constantes.J2))
         break
     
     if verifica_empate():
-        print("PARTIDA EMPATADA!")
+        print("\033[1;33mPARTIDA EMPATADA!\033[1;43m")
         break
 
     imprime_pos_jogada()
