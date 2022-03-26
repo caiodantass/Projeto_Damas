@@ -116,7 +116,6 @@ def start():
         constantes.jogador_atual = 1
         criando_tabuleiro()
 
-
 start()
 
 # Execução do programa
