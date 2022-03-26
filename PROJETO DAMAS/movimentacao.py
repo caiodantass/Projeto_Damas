@@ -57,12 +57,12 @@ def limites_diagonais(l, c):
     
     return direita_descendo, direita_subindo, esquerda_descendo, esquerda_subindo
 
-def gera_posicoes(l, c):
+def gera_posicoes(l_o, c_o):
     """Gera a lista de posições validas dentro dos limites diagonais.
     
     Args:
-        l (int): Linha referente a peça a ser analizada
-        c (int): Coluna referente a peça a ser analizada
+        l_o (int): Linha referente a peça a ser analizada
+        c_o (int): Coluna referente a peça a ser analizada
         
     Returns:
         list: Lista de posições validas para a movimentação da dama.
@@ -70,7 +70,7 @@ def gera_posicoes(l, c):
     
     pos_validas = []
     
-    limites = limites_diagonais(l, c)
+    limites = limites_diagonais(l_o, c_o)
 
     direita_descendo = limites[0]
     direita_subindo = limites[1]
@@ -78,29 +78,29 @@ def gera_posicoes(l, c):
     esquerda_subindo = limites[3]
     
 
-    l = l - 1
-    c = c + 1
+    l = l_o - 1
+    c = c_o + 1
     while(l>=direita_subindo[0] and c<=direita_subindo[1]):
         pos_validas.append([l, c])
         l -= 1
         c += 1
             
-    l = l - 1
-    c = c - 1
+    l = l_o - 1
+    c = c_o - 1
     while(l>=esquerda_subindo[0] and c>=esquerda_subindo[1]):
         pos_validas.append([l, c])
         l -= 1
         c -= 1
         
-    l = l + 1
-    c = c + 1
+    l = l_o + 1
+    c = c_o + 1
     while(l<=direita_descendo[0] and c<=direita_descendo[1]):
         pos_validas.append([l, c])
         l += 1
         c += 1
         
-    l = l + 1
-    c = c - 1
+    l = l_o + 1
+    c = c_o - 1
     while(l<=esquerda_descendo[0] and c>=esquerda_descendo[1]):
         pos_validas.append([l, c])
         l += 1
