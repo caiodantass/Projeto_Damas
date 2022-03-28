@@ -65,7 +65,7 @@ def jogador_nome(n):
     """Verifica o nome de cada jogador
 
     Args:
-        entrada (string): Nome que os jogadores vão colocar.
+        n (string): Nome que os jogadores vão colocar.
 
     Returns:
        string: Nome do jogador 
@@ -74,6 +74,14 @@ def jogador_nome(n):
 
 
 def jogador_peca(n):
+    """Verifica o tipo de peça do jogador
+    
+    Args:
+        n (int): inteiro referente ao tipo do jogador
+        
+    Returns:
+        string: cor da peça do jogador
+    """
     return constantes.pretas if n == 1 else constantes.brancas
 
 
