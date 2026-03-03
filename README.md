@@ -45,13 +45,13 @@ Exemplo (digitando com espaço):
 git clone https://github.com/caiodantass/Projeto_Damas.git
 ```
 
-Entre na pasta:
+### Entre na pasta:
 cd Projeto_Damas
 
-Execute:
+### Execute:
 python main.py
 
-No Windows, se necessário:
+### No Windows, se necessário:
 py main.py
 
 
