@@ -29,6 +29,7 @@ Os valores devem estar entre **0 e 7**.
 Exemplo (digitando com espaço):
 
 2 3
+
 3 4
 
 ---
@@ -46,13 +47,18 @@ git clone https://github.com/caiodantass/Projeto_Damas.git
 ```
 
 ### Entre na pasta:
+```bash
 cd Projeto_Damas
+```
 
 ### Execute:
+```bash
 python main.py
+```
 
 ### No Windows, se necessário:
-py main.py
+```bashpy main.py
+```
 
 
 💾 Salvamento (Memory Card)
