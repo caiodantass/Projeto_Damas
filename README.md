@@ -1,1 +1,1 @@
-# Projeto_Damas
+# Jogo de Damas em Python
