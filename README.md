@@ -57,11 +57,12 @@ python main.py
 ```
 
 ### No Windows, se necessário:
-```bashpy main.py
+```bashpy
+ main.py
 ```
 
 
-💾 Salvamento (Memory Card)
+## 💾 Salvamento (Memory Card)
 
 O projeto utiliza um arquivo chamado savegame.pkl para guardar o estado do jogo.
 
@@ -77,7 +78,7 @@ Para iniciar do zero (apagando o “memory card”), basta deletar o arquivo:
 
 savegame.pkl
 
-🧩 Estrutura do projeto
+## 🧩 Estrutura do projeto
 
 main.py — loop principal do jogo e fluxo das jogadas
 
@@ -89,7 +90,7 @@ constantes.py — constantes e estado global do jogo
 
 banco_de_dados.py — salvar/carregar partida com pickle
 
-🚀 Melhorias futuras (ideias)
+## 🚀 Melhorias futuras (ideias)
 
  Interface gráfica (ex.: Pygame)
 
@@ -101,7 +102,7 @@ banco_de_dados.py — salvar/carregar partida com pickle
 
  Testes unitários para regras
 
-👤 Autor
+## 👤 Autor
 
-Feito por Caio Dantas
+### Feito por Caio Dantas
 Se curtir o projeto, deixa uma ⭐ no repositório!
